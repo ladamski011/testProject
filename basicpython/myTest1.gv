@@ -1,0 +1,15 @@
+digraph {
+	graph [rankdir=LR]
+	node [fontname=Handlee shape=diamond]
+	edge [arrowhead=vee fontname=Handlee]
+	1 [label=One]
+	node [fontname=Handlee shape=box]
+	2 [label=Two]
+	4 [label=Three]
+	1 -> 4
+	4 -> 3
+	1 -> 2
+	2 -> 1
+	2 -> 3 [label=Noted]
+	3 [label=Final]
+}

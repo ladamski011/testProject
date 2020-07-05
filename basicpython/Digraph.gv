@@ -1,0 +1,6 @@
+digraph {
+	1 [label=One]
+	2 [label=Two]
+	1 -> 2
+	2 -> 1
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <style>
+        a.test {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <span id="1">
+        <a href="javascript:tryLoad()">jQuery</a>
+    </span>
+    
+    <script src="jquery.js"></script>
+    <script>
+ 
+    $(document).ready(function(){
+        // $("a").click(function(event){
+        //     alert("Dupa dupa")
+        //     event.preventDefault();
+        //     $(this).hide("slow");
+        // })
+        // $("a").addClass("test")
+
+    })
+ 
+    </script>
+        
+    <script>
+        function tryLoad (){
+            alert("Funkcja aktywna")
+            $.get("https://www.onet.pl", function (result){
+                var el = $(result).appendTo( "#content" )
+            })
+        }
+    </script>
+</body>
+</html>
